@@ -1,0 +1,9 @@
+.game-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#score {
+    font-size: 140px;
+    font-family: serif;
+}
