@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic" rel="stylesheet"
+        type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="player">
+        <audio></audio>
+        <div class="cover"></div>
+        <nav>
+            <div class="left">
+                <i class="material-icons">menu</i>
+                <h6>Playlist</h6>
+            </div>
+            <div class="right">
+                <i class="material-icons search">search</i>
+                <i class="material-icons">queue_music</i>
+            </div>
+        </nav>
+        <div class="player-ui">
+            <div class="title">
+                <h3 data-title></h3>
+            </div>
+            <div class="small">
+                <i class="material-icons">replay</i>
+                <p data-singer></p>
+                <i class="material-icons">volume_up</i>
+            </div>
+            <div class="progress">
+                <div class="played">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="controls">
+                <i class="material-icons" data-action="previous">skip_previous</i>
+                <i class="material-icons" data-action="play">play_arrow</i>
+                <i class="material-icons" data-action="next">skip_next</i>
+            </div>
+        </div>
+        <div class="btn">
+            <i class="material-icons">shuffle</i>
+        </div>
+        <div class="music"></div>
+    </div>
+
+
+    <template id="song">
+        <div class="song">
+            <div class="info">
+                <div class="img"></div>
+                <div class="titles">
+                    <h5>{{title}}</h5>
+                    <p>{{singer}}</p>
+                </div>
+            </div>
+            <div class="state {{playing}}">
+                <i class="material-icons" data-action="changesource">{{icon}}</i>
+            </div>
+        </div>
+    </template>
+
+
+    <script src="./player.js"></script>
+
+    <script>
+        const sources = [{
+                src: './assets/music1.mp3',
+                cover: './assets/01.jpg',
+                title: 'music1',
+                singer: 'singer1'
+            },
+            {
+                src: './assets/music2.mp3',
+                cover: './assets/02.jpg',
+                title: 'music2',
+                singer: 'singer2'
+            },
+            {
+                src: './assets/music3.mp3',
+                cover: './assets/03.jpg',
+                title: 'music3',
+                singer: 'singer3'
+            },
+            {
+                src: './assets/music4.mp3',
+                cover: './assets/04.jpg',
+                title: 'music4',
+                singer: 'singer4'
+            },
+        ]
+        new Player(document.querySelector('.player'), sources)
+    </script>
+</body>
+
+</html>
