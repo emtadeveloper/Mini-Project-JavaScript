@@ -1,0 +1,123 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "title": "watch  hamburger",
+            "class": "watch",
+            "price": 19.99,
+            "image": "./images/hamburger-1.png"
+        },
+        {
+            "id": 2,
+            "title": "watch  hamburger",
+            "class": "hamburger",
+            "price": 13.99,
+            "image": "./images/hamburger-2.png"
+        },
+        {
+            "id": 3,
+            "title": "watch  hamburger",
+            "class": "hamburger",
+            "price": 29.99,
+            "image": "./images/hamburger-3.png"
+        },
+        {
+            "id": 4,
+            "title": "watch  hamburger",
+            "class": "hamburger",
+            "price": 14.99,
+            "image": "./images/hamburger-4.png"
+        },
+        {
+            "id": 5,
+            "title": "watch  pasta",
+            "class": "pasta",
+            "price": 5.99,
+            "image": "./images/pasta-1.png"
+        },
+        {
+            "id": 6,
+            "title": "watch  pasta",
+            "class": "pasta",
+            "price": 1.99,
+            "image": "./images/pasta-2.png"
+        },
+        {
+            "id": 7,
+            "title": "watch  pasta",
+            "class": "pasta",
+            "price": 7.99,
+            "image": "./images/pasta-3.png"
+        },
+        {
+            "id": 8,
+            "title": "watch  pizza",
+            "class": "pizza",
+            "price": 10.99,
+            "image": "./images/pizza-1.png"
+        },
+        {
+            "id": 9,
+            "title": "watch  pizza",
+            "class": "pizza",
+            "price": 12.99,
+            "image": "./images/pizza-2.png"
+        },
+        {
+            "id": 10,
+            "title": "watch  pizza",
+            "class": "pizza",
+            "price": 15.99,
+            "image": "./images/pizza-3.png"
+        },
+        {
+            "id": 11,
+            "title": "watch  pizza",
+            "class": "pizza",
+            "price": 17.99,
+            "image": "./images/pizza-4.png"
+        },
+        {
+            "id": 12,
+            "title": "watch  vegetable",
+            "class": "vegetable",
+            "price": 19.99,
+            "image": "./images/vegetable-1.png"
+        },
+        {
+            "id": 13,
+            "title": "watch  vegetable",
+            "class": "vegetable",
+            "price": 19.99,
+            "image": "./images/vegetable-2.png"
+        },
+        {
+            "id": 14,
+            "title": "watch  vegetable",
+            "class": "vegetable",
+            "price": 19.99,
+            "image": "./images/vegetable-3.png"
+        },
+        {
+            "id": 14,
+            "title": "watch  vegetable",
+            "class": "vegetable",
+            "price": 19.99,
+            "image": "./images/vegetable-4.png"
+        },
+        {
+            "id": 14,
+            "title": "watch  vegetable",
+            "class": "vegetable",
+            "price": 19.99,
+            "image": "./images/vegetable-5.png"
+        },
+        {
+            "id": 14,
+            "title": "watch vegetable",
+            "class": "vegetable",
+            "price": 19.99,
+            "image": "./images/vegetable-6.png"
+        }
+    ]
+}

@@ -1,0 +1,132 @@
+ :root {
+    --primaryColor: #6d28d9;
+    --secoundColor: #ede9fe;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGray: #7c7c7c;
+    --mainSpaseing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+    --mainRed: #db2777;
+    --bodyColor: #f6f6f6f6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Yekan";
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: "Lato" ,sans-serif;
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    background-color:var(--bodyColor); 
+}
+
+.header{
+    position: sticky;
+    top:0;
+    width: 100%;
+    height: 170px;
+    background-color: var(--secoundColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    padding-bottom: 1rem;
+}
+
+#search{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    width: 20rem ;
+}
+
+#search:focus{
+    border:  2px solid var(--primaryColor);
+}
+
+.filter-box {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+
+.filter-box a {
+    display: block;
+    text-decoration: none;
+    color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+
+.filter-box a:hover{
+    background-color:var(--primaryColor);
+    color: var(--secoundColor);
+}
+
+.products {
+    padding: 4rem 0;
+   
+}
+
+.products-center{
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 5rem;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #ffff;
+    padding-bottom: 1rem;
+}
+
+
+.img-container{
+    width:70%;
+}
+
+
+.product .img-container img {
+    display: block;
+    width:100%;
+    height: auto;
+    min-height: 12rem;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.product-desc {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.products-title {
+    color: var(--mainBlack);
+    font: bold;
+    font-size: 1.1rem;
+}
+.product-price {
+    color: var(--primaryColor);
+}
